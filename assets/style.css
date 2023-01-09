@@ -23,6 +23,7 @@ nav {
     height: 160px;
     background-color: var(--nav-color);
     font-family: 'Darker Grotesque', sans-serif;
+    /* overflow: hidden; */
 }
 
 #nav-logo {
@@ -365,7 +366,8 @@ label #close {
 @media screen and (max-width: 640px) {
     /* ==========Mavbar========== */
     nav {
-        height: 50px;
+        height: 80px;
+        overflow: hidden;
     }
 
     #nav-logo {
@@ -404,6 +406,10 @@ label #close {
     .nav-ul li a {
         font-size: 20px;
         margin-left: 30px;
+    }
+
+    #check:checked {
+        overflow: hidden;
     }
 
     #check:checked ~ .nav-ul {
