@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Corinthia:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+<body>
+<!-- ==========Navbar========== -->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="bi bi-three-dots" id="btn"></i>
+        <i class="bi bi-x" id="close"></i>
+    </label>
+    <a href=""><img src="assets/img/simple-logo.png" alt="Vryz.me logo" width="180px" id="nav-logo"></a>
+    <ul class="nav-ul">
+        <li><a href="" class="utama nav-link">Blog</a></li>
+        <li><a href="" class="utama nav-link">Buletin Kaffah</a></li>
+        <li><a href="" class="utama nav-link">Notion Page</a></li>
+        <li><a href="" class="utama nav-link">Projects</a></li><br>
+        <li><a href="" class="nav-link">About</a></li>
+        <li><a href="" class="nav-link">Contact Me</a></li>
+        <li><a href="" class="nav-link">Bio Link</a></li>
+    </ul>
+</nav>
+
+<!-- ==========main========== -->
+<section class="main">
+    <img src="assets/img/bg.jpg" alt="background-image" id="mainBg">
+    <h1 class="main-title" id="mainTitle">Welcome!</h1>
+    <h2 class="main-sub" id="mainSub">Hello Guys, Zulfi Disini dan ini adalah website watashi</h2>
+    <a href="#" class="mainBtn" id="btnBlog">MY BLOG</a>
+</section>
+
+<!-- ==========featured article========== -->
+<section class="feat" id="feat">
+    <div class="feat-title">
+        <h2>FEATURED POST</h2>
+        <a href="#">See More..</a>
+    </div>
+
+    <div class="feat-main">
+        <!-- article 1 -->
+        <article id="projects-1">
+            <div class="container">
+                <div class="inner">
+                    <a href="https://zulfifazhar.github.io/sign-up/Signup.html" target="_blank"><img src="assets/img/bg4.jpg" alt="Responsive Sign Up and Login website"/></a>
+                </div>
+                <div class="card-body">
+                    <p id="date">jan 7, 2022</p>
+                    <p id="card-title">Sign Up and Sign In Pages 1</p>
+                    <p class="card-text">Responsive Sign Up and Login website</p>
+                </div>
+            </div>
+        </article>
+    
+        <!-- article 2 -->
+        <article id="projects-2">
+            <div class="inner">
+                <a href="https://zulfifazhar.github.io/sign-up/Signup.html" target="_blank"><img src="assets/img/bg4.jpg" alt="Responsive Sign Up and Login website"/></a>
+            </div>
+            <div class="card-body">
+                <p id="date">jan 7, 2022</p>
+                <p id="card-title">Sign Up and Sign In Pages 2</p>
+                <p class="card-text">Responsive Sign Up and Login website</p>
+            </div>
+        </article>
+    
+        <!-- article 3 -->
+        <article id="projects-3">
+            <div class="inner">
+                <a href="https://zulfifazhar.github.io/sign-up/Signup.html" target="_blank"><img src="assets/img/bg4.jpg" alt="Responsive Sign Up and Login website"/></a>
+            </div>
+            <div class="card-body">
+                <p id="date">jan 7, 2022</p>
+                <p id="card-title">Sign Up and Sign In Pages 3</p>
+                <p class="card-text">Responsive Sign Up and Login website</p>
+            </div>
+        </article>
+    </div>
+<br><br><hr>
+</section>
+
+<!-- JS Paralax -->
+<script>
+let mainBg = document.getElementById('mainBg');
+
+window.addEventListener('scroll', function () {
+    let value = window.scrollY;
+    mainBg.style.top = value * 0.2 + 'px';
+});
+</script>
+
+</body>
+</html>
