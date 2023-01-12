@@ -21,21 +21,26 @@
 <body>
 <!-- ==========Navbar========== -->
 <nav>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="bi bi-three-dots" id="btn"></i>
-        <i class="bi bi-x" id="close"></i>
-    </label>
-    <a href=""><img src="assets/img/simple-logo.png" alt="Vryz.me logo" width="180px" id="nav-logo"></a>
-    <ul class="nav-ul">
-        <li><a href="" class="utama nav-link">Blog</a></li>
-        <li><a href="" class="utama nav-link">Buletin Kaffah</a></li>
-        <li><a href="" class="utama nav-link">Notion Page</a></li>
-        <li><a href="" class="utama nav-link">Projects</a></li><br>
-        <li><a href="" class="nav-link">About</a></li>
-        <li><a href="" class="nav-link">Contact Me</a></li>
-        <li><a href="" class="nav-link">Bio Link</a></li>
+    <div class="logo">
+        <img src="assets/img/simple-logo.png" alt="Logo" width="150px">
+    </div>
+
+    <ul>
+        <li><a href="" class="utama">Blog</a></li>
+        <li><a href="" class="utama">Buletin Kaffah</a></li>
+        <li><a href="" class="utama">Notion Page</a></li>
+        <li><a href="" class="utama">Projects</a></li><br>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact Me</a></li>
+        <li><a href="">Bio Link</a></li>
     </ul>
+
+    <div class="menu-toggle">
+        <input type="checkbox" id="check">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </nav>
 
 <!-- ==========main========== -->
@@ -97,6 +102,15 @@
 
 <!-- JS Paralax -->
 <script>
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+const stopScroll = document.querySelector('body')
+
+menuToggle.addEventListener('click', function(){
+    nav.classList.toggle('slide');
+    stopScroll.classList.toggle('stop-scrolling');
+})
+
 let mainBg = document.getElementById('mainBg');
 
 window.addEventListener('scroll', function () {
