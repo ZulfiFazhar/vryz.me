@@ -33,9 +33,9 @@ nav {
     font-family: 'Darker Grotesque', serif;
 }
 
-nav .logo {
+/* nav .logo {
     z-index: 99;
-}
+} */
 
 nav ul {
     /* display: flex; */
@@ -66,8 +66,8 @@ nav ul li .utama {
 /* Hamburger Menu */
 .menu-toggle {
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -88,8 +88,8 @@ nav ul li .utama {
 
 .menu-toggle span {
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     background-color: var(--font-color);
     border-radius: 100px;
     transition: .4s;
@@ -100,9 +100,9 @@ nav ul li .utama {
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(-135deg) translate(-33px, -20px);
-    width: 8px;
-    height: 40px;
+    transform: rotate(-135deg) translate(-24px, -15px);
+    width: 5px;
+    height: 30px;
 }
 
 .menu-toggle input:checked ~ span:nth-child(3) {
@@ -113,9 +113,9 @@ nav ul li .utama {
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-225deg) translate(-10px, 42px);
-    width: 8px;
-    height: 40px;
+    transform: rotate(-225deg) translate(-6px, 33px);
+    width: 5px;
+    height: 30px;
 }
 
 /* ==========main section========== */
@@ -358,10 +358,10 @@ nav ul li .utama {
         text-align: left;
         background-color: var(--nav-color);
         padding-left: 15%;
-        padding-top: 90px;
+        padding-top: 15px;
         z-index: 1;
         transform: translateX(-100%);
-        transition: all .7s;
+        transition: all .5s;
         opacity: 0;
     }
 
@@ -376,6 +376,10 @@ nav ul li .utama {
 
     .menu-toggle {
         display: flex;
+    }
+
+    nav .logo img {
+        width: 80px;
     }
 
     /* ==========main section========== */
