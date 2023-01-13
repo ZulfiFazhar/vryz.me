@@ -12,11 +12,6 @@ body {
     font-family: 'Baskervville', serif;
 }
 
-body.stop-scrolling {
-    height: 100vh;
-    overflow: hidden;
-}
-
 hr {
     border: none;
     height: 1px;
@@ -51,7 +46,7 @@ nav ul li {
 }
 
 
-nav ul li a {
+nav ul li .pilihan {
     text-decoration: none;
     color: #7b7b7b;
     font-weight: 600;
@@ -120,173 +115,114 @@ nav ul li .utama {
 }
 
 /* ==========main section========== */
-.main {
-    font-family: 'Darker Grotesque', sans-serif;
-    color: white;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
 
 
-    pointer-events: none;
+.container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://source.unsplash.com/1600x900/?productivity-setup');
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
 }
 
-
-.main-title {
-    font-family: 'Corinthia', cursive;
-    position: absolute;
-    font-size: 300px;
-    padding-bottom: 100px;
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-.main-sub {
-    text-transform: uppercase;
-    position: absolute;
-    padding-top: 130px;
-    font-size: 22px;
-    text-align: center;
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
 }
 
-.mainBtn {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    color: white;
-    font-size: 20px;
-    font-weight: 800;
-    transform: translateY(150px);
-    transition: 0.1s background-color linear, 0.1s color linear;
+.link {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
 }
 
-.mainBtn:hover {
-    background: white;
-    color: var(--font-color);
+.blank,
+.other {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--color);
 }
 
-/* ==========featured section========== */
-.feat {
-    font-family: 'Baskervville', serif;
-    position: relative;
-    padding: 50px 340px 50px 340px;
-    background: white;
-    z-index: 10000;
+.second {
+  background-image:url('https://source.unsplash.com/1600x900/?mechanical-keyboard');
+  background-attachment: fixed;
+  height: 1200px;
+  color: black;
 }
 
-.feat-title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
 }
 
-.feat-title h2 {
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 24px;
-    color: var(--font-color);
-    margin-bottom: 10px;
-    text-align: center;
+.card > a {
+  margin-bottom: 2em;
 }
 
-.feat-title a {
-    font-size: 20px;
-    font-style: italic;
-    text-decoration: none;
-    color: var(--font-color);
-    text-align: center;
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
 }
 
-.feat p {
-    font-size: 18px;
-    color: var(--font-color);
-    text-align: center;
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
 }
 
-.feat-main {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto 50px auto;
-    width: auto;
-    position: relative;
+.img-first {
+  background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
 }
 
-    /* article settings */
-.projects-1 {
-    width: 400px;
-}
-.projects-2 {
-    width: 400px;
-}
-.projects-3 {
-    width: 400px;
+.img-second {
+  background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
 }
 
-.card-body #date {
-    text-transform: capitalize;
-    font-style: italic;
+.img-third {
+  background-image: url(https://images.unsplash.com/photo-1632853073412-782bf0279d65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 
-.inner {
-    overflow: hidden;
+.second {
+  flex-direction: row;
+  gap: 1.6em;
 }
-    
-.inner img {
-    width: 400px;
-    transition: all 1s ease;
-    display: inline-flex;
-}
-    
-.inner:hover img {
-    transform: scale(1.1);
-}
-
-    /* article */
-.main-project {
-    width: 100%;
-}
-
 
 /* responsive breakpoints */
-@media screen and (max-width: 1288px) {
-
-    /* ==========featured section========== */
-    .feat {
-        padding: 50px 200px 50px 200px;
-    }
-
-    .feat-title h2{
-        font-size: 20px;
-    }
-
-    .feat-title a{
-        font-size: 18px;
-    }
-
-    .feat p{
-        font-size: 16px;
-    }
-
-    .inner img {
-        width: 250px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
 
     /* ==========main section========== */
     .main-title {
@@ -324,10 +260,7 @@ nav ul li .utama {
     }
 }
 
-@media screen and (max-width: 884px) {
-    nav ul {
-        width: 50%;
-    }
+@media screen and (max-width: 768px) {
 
     /* ==========main section========== */
     .main-title {
@@ -345,7 +278,7 @@ nav ul li .utama {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
     /* ==========Mavbar========== */
     nav {
         justify-content: space-between;

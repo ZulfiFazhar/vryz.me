@@ -1,15 +1,16 @@
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('nav ul');
-const stopScroll = document.querySelector('body')
+// const stopScroll = document.querySelector('body')
 
 menuToggle.addEventListener('click', function(){
     nav.classList.toggle('slide');
-    stopScroll.classList.toggle('stop-scrolling');
+    // stopScroll.classList.toggle('stop-scrolling');
+    document.body.style.overflow = "hidden"
 })
 
-let mainBg = document.getElementById('mainBg');
+// let mainBg = document.getElementById('parallax');
 
-window.addEventListener('scroll', function () {
-    let value = window.scrollY;
-    mainBg.style.top = value * 0.4 + 'px';
-});
+// window.addEventListener('scroll', function () {
+//     let value = window.scrollY;
+//     mainBg.style.top = value * 0.4 + 'px';
+// });
