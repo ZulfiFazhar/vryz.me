@@ -55,7 +55,8 @@ nav ul li a {
     text-decoration: none;
     color: #7b7b7b;
     font-weight: 600;
-    font-size: larger;
+    font-size: medium;
+    text-transform: uppercase;
 }
 
 nav ul li .utama {
@@ -100,8 +101,8 @@ nav ul li .utama {
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(-135deg) translate(-24px, -15px);
-    width: 5px;
+    transform: rotate(-135deg) translate(-23px, -15px);
+    width: 3px;
     height: 30px;
 }
 
@@ -113,8 +114,8 @@ nav ul li .utama {
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-225deg) translate(-6px, 33px);
-    width: 5px;
+    transform: rotate(-225deg) translate(-4px, 34px);
+    width: 3px;
     height: 30px;
 }
 
@@ -346,6 +347,11 @@ nav ul li .utama {
 
 @media screen and (max-width: 640px) {
     /* ==========Mavbar========== */
+    nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
     nav ul {
         position: absolute;
         left: 0;
@@ -357,8 +363,8 @@ nav ul li .utama {
         justify-content: flex-start;
         text-align: left;
         background-color: var(--nav-color);
-        padding-left: 15%;
-        padding-top: 15px;
+        padding-left: 10%;
+        padding-top: 10%;
         z-index: 1;
         transform: translateX(-100%);
         transition: all .5s;
@@ -371,7 +377,7 @@ nav ul li .utama {
     }
 
     nav ul li {
-        margin-top: 15px;
+        margin-top: 1px;
     }
 
     .menu-toggle {
