@@ -11,6 +11,11 @@
 body {
     /* font-family: 'Baskervville', serif; */
     font-family: 'Darker Grotesque', serif;
+    overflow-x: hidden;
+}
+
+body.stop-scrolling{
+    overflow: hidden;
 }
 
 hr {
@@ -116,56 +121,46 @@ nav ul li .utama {
 }
 
 /* ==========main section========== */
-
-
 .container {
-  text-align: center;
-  color: rgb(243, 243, 243);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url('https://source.unsplash.com/1600x900/?productivity-setup');
-  background-size: cover;
-  background-position: center;
-  
-/*  this is where the magic happens:  */
-  background-attachment: fixed;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://source.unsplash.com/1600x900/?macbook');
+    /* background-image: url('img/bg.webp'); */
+    background-color: #4d4d4d;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 200px;
-  text-shadow: 2px 2px #4d4d4d;
-  font-family: 'Corinthia', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    text-shadow: 2px 2px #4d4d4d;
+    font-family: 'Corinthia', sans-serif;
 }
 
-p {
-  max-width: 52ch;
-  line-height: 1.5;
-  padding: 1em;
-  font-size: 20px;
-  font-weight: 500;
+.main-link {
+    display: inline-block;
+    padding: 1em 3.5em;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+    text-shadow: 2px 2px #4d4d4d;
+    box-shadow: 2px 2px #4d4d4d;
 }
 
-.link {
-  display: inline-block;
-  padding: 1em 3.5em;
-  color: white;
-  border: 2px solid white;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.3em;
-  font-weight: 700;
-  letter-spacing: .5px;
-  font-size: .875rem;
-  text-shadow: 2px 2px #4d4d4d;
-  box-shadow: 2px 2px #4d4d4d;
-}
-
-.link:hover {
+.main-link:hover {
     background-color: white;
     color: #4d4d4d;
     transition: all .2s ease-in-out;
@@ -173,124 +168,137 @@ p {
     box-shadow: none;
 }
 
-.blank,
-.other {
-  width: 100%;
-  height: 10vh;
-  background-color: var(--color);
+/* ========== Projects ========== */
+.project-typo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    margin-top: 5vh;
+    font-size: 14px;
+    letter-spacing: 3px;
 }
 
-.second {
-  background-image:url('https://source.unsplash.com/1600x900/?mechanical-keyboard');
-  background-attachment: fixed;
-  height: 1200px;
-  color: black;
+.project-typo a {
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #929292;
+    font-size: 16px;
+    letter-spacing: normal;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin-top: 1em;
+.project-typo a:hover {
+    color: #4d4d4d;
 }
 
-.card > a {
-  margin-bottom: 2em;
+.project-link {
+    display: inline-block;
+    padding: 1em 2.5em;
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+.project-link:hover {
+    color: white;
+    background-color: var(--font-color);
+    transition: all .2s ease-in-out;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
 }
 
 .item {
-  display: flex;
-  max-width: 320px;
-  background-color: white;;
-  flex-direction: column;
-  align-items: center;
-  border-radius: .5em;
-  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    display: flex;
+    width: 320px;
+    height: 70vh;
+    background-color: rgb(246, 246, 246);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 1%;
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
 }
 
 .img {
-  width: 90%;
-  height: 200px;
-  background-color: lightgrey;
-  background-size: cover;
-  background-position: center;
-  margin-top: 20px;
-  border-radius: .3em;;
+    width: 90%;
+    height: 200px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: .3em;
 }
 
 .img-first {
-  background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
+    background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
 }
 
 .img-second {
-  background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
+    background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
 }
 
 .img-third {
-  background-image: url(https://images.unsplash.com/photo-1632853073412-782bf0279d65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-image: url(https://images.unsplash.com/photo-1632853073412-782bf0279d65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ========== Second Container ========== */
 .second {
-  flex-direction: row;
-  gap: 1.6em;
+    background-image:url('https://source.unsplash.com/1600x900/?mechanical-keyboard');
+    background-attachment: fixed;
+    height: 100vh;
+    color: black;
+}
+
+/* .second {
+    flex-direction: row;
+    gap: 1.6em;
+} */
+
+.blank,
+.other {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color);
 }
 
 /* responsive breakpoints */
 @media screen and (max-width: 992px) {
 
-    /* ==========main section========== */
-    .main-title {
-        font-size: 200px;
-    }
-
-    .main-sub {
-        font-size: 18px;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-
-    /* ==========featured section========== */
-    .feat {
-        padding: 50px 100px 50px 100px;
-    }
-    
-    .feat-title h2{
-        font-size: 18px;
-    }
-
-    .feat-title a{
-        font-size: 16px;
-    }
-
-    .feat p{
-        font-size: 14px;
-    }
-
-    .inner img {
-        margin-top: 20px;
-        width: 200px;
-    }
 }
 
 @media screen and (max-width: 768px) {
 
-    /* ==========main section========== */
-    .main-title {
-        font-size: 150px;
-        padding-bottom: 100px;
-    }
-
-    .main-sub {
-        font-size: 16px;
-        padding-top: 160px;
-    }
-
-    .btn {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 576px) {
