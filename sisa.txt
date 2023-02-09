@@ -1,0 +1,34 @@
+
+.main-title {
+    font-family: 'Corinthia', cursive;
+    position: absolute;
+    font-size: 300px;
+    /* padding-bottom: 100px; */
+}
+
+.main-sub {
+    text-transform: uppercase;
+    position: absolute;
+    /* padding-top: 130px;
+    font-size: 22px; */
+    text-align: center;
+}
+
+.main-btn {
+    text-decoration: none;
+    /* display: inline-block; */
+    padding: 8px 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    transform: translateY(150px);
+    transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+.main-btn:hover {
+    background: white;
+    color: var(--font-color);
+}
