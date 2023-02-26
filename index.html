@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
 
     <!-- GFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Corinthia:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Corinthia:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Vryz</title>
-</head>
-<body>
-<!-- ========== Navbar ========== -->
-<nav>
-    <div class="logo">
-        <img src="assets/img/simple-logo.png" alt="Logo" width="150px">
-    </div>
+  </head>
+  <body>
+    <!-- ========== Navbar ========== -->
+    <nav class="fixed">
+      <div class="logo">
+        <img src="assets/img/simple-logo.png" alt="Logo" width="150px" />
+      </div>
 
-    <ul>
+      <ul>
         <li><a href="" class="utama pilihan">Blog</a></li>
         <li><a href="" class="utama pilihan">Buletin Kaffah</a></li>
         <li><a href="" class="utama pilihan">Notion Page</a></li>
-        <li><a href="" class="utama pilihan">Projects</a></li><br>
+        <li><a href="" class="utama pilihan">Projects</a></li>
+        <br />
         <li><a href="" class="pilihan">About</a></li>
         <li><a href="" class="pilihan">Contact Me</a></li>
         <li><a href="" class="pilihan">Bio Link</a></li>
-    </ul>
+      </ul>
 
-    <div class="menu-toggle">
-        <input type="checkbox" id="check">
+      <div class="menu-toggle">
+        <input type="checkbox" id="check" />
         <span></span>
         <span></span>
         <span></span>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- ========== Main ========== -->
-<div class="container">
-    <h1>Welcome!</h1>
-    <a href="#" class="main-link">My Blog</a>
-</div>
-
-<!-- ========== Project ========== -->
-<div class="project-typo">
-    <h2>FEATURED POSTS</h2>
-    <a href="#">See All Posts</a>
-</div>
-
-<div class="project">
-    <div class="item">
-        <div class="img img-first"></div>
-        <div class="card">
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati necessitatibus alias?</p>
-            <a href="#" class="project-link link">See more</a>
-        </div>
+    <!-- ========== Main ========== -->
+    <div class="container">
+      <h1>Welcome!</h1>
+      <a href="#" class="main-link">My Blog</a>
     </div>
 
-    <div class="item">
-        <div class="img img-second"></div>
-        <div class="card">
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati necessitatibus alias?</p>
-            <a href="#" class="project-link link">See more</a>
-        </div>
+    <!-- ========== Project ========== -->
+    <div class="project-typo">
+      <h2>FEATURED POSTS</h2>
+      <a href="#">See All Posts</a>
     </div>
 
-    <div class="item three">
-        <div class="img img-third"></div>
-        <div class="card">
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati necessitatibus alias?</p>
-            <a href="#" class="project-link link">See more</a>
-        </div>
+    <!-- CARD -->
+    <div class="card-container main-gallery">
+      <div class="card gallery-cell">
+        <span class="img1"></span>
+        <p>Card 1</p>
+      </div>
+      <div class="card gallery-cell">
+        <span class="img2"></span>
+        <p>Card 2</p>
+      </div>
+      <div class="card gallery-cell">
+        <span class="img3"></span>
+        <p>Card 3</p>
+      </div>
     </div>
-</div>
+    <!-- END CARD -->
 
-<div class="container second">
-    <h1>About Me</h1>
-</div>
+    <div class="container second">
+      <h1>About Me</h1>
+    </div>
 
-<div class="blank"></div>
+    <div class="blank"></div>
 
-<!-- ==========featured article========== -->
+    <!-- ==========featured article========== -->
 
-
-<!-- JS -->
-<script src="assets/script.js"></script>
-
-</body>
+    <!-- JS -->
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>

@@ -1,12 +1,16 @@
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
-const stopScroll = document.querySelector('body');
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
+const stopScroll = document.querySelector("body");
 
-menuToggle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-    stopScroll.classList.toggle('stop-scrolling');
-    // document.body.style.overflow.toggle = "hidden"
-})
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
+  stopScroll.classList.toggle("stop-scrolling");
+});
+var flkty = new Flickity(".main-gallery", {
+  // options
+  cellAlign: "left",
+  contain: true,
+});
 
 // let mainBg = document.getElementById('parallax');W
 
