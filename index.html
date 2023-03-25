@@ -7,7 +7,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
 
     <!-- GFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,8 +26,12 @@
       </div>
 
       <ul>
-        <li><a href="" class="utama pilihan">Blog</a></li>
-        <li><a href="" class="utama pilihan">Buletin Kaffah</a></li>
+        <li>
+          <a href="" class="utama pilihan">Home</a>
+        </li>
+        <li>
+          <a href="" class="utama pilihan">Blog</a>
+        </li>
         <li><a href="" class="utama pilihan">Notion Page</a></li>
         <li><a href="" class="utama pilihan">Projects</a></li>
         <br />
@@ -46,44 +49,63 @@
     </nav>
 
     <!-- ========== Main ========== -->
-    <div class="container">
-      <h1>Welcome!</h1>
-      <a href="#" class="main-link">My Blog</a>
-    </div>
-
-    <!-- ========== Project ========== -->
-    <div class="project-typo">
-      <h2>FEATURED POSTS</h2>
-      <a href="#">See All Posts</a>
-    </div>
-
-    <!-- CARD -->
-    <div class="card-container main-gallery">
-      <div class="card gallery-cell">
-        <span class="img1"></span>
-        <p>Card 1</p>
+    <main>
+      <div class="container">
+        <h1>Welcome!</h1>
+        <a href="#" class="main-link">My Blog</a>
       </div>
-      <div class="card gallery-cell">
-        <span class="img2"></span>
-        <p>Card 2</p>
-      </div>
-      <div class="card gallery-cell">
-        <span class="img3"></span>
-        <p>Card 3</p>
-      </div>
-    </div>
-    <!-- END CARD -->
 
-    <div class="container second">
-      <h1>About Me</h1>
-    </div>
+      <!-- ========== Project ========== -->
+      <section class="featured">
+        <div class="project-typo">
+          <h2>FEATURED POSTS</h2>
+          <a href="#">See All Posts</a>
+        </div>
 
-    <div class="blank"></div>
+        <!-- CARD -->
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/project-img/1.png" alt="" width="100%" />
+            <p class="card-time">Jan 1st 2023</p>
+            <p class="card-title">Projet Name</p>
+            <p class="card-description">
+              Project Description Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Vero id, odit ratione quis dignissimos nobis
+              ipsum minima perspiciatis beatae pariatur?
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/project-img/1.png" alt="" width="100%" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              nesciunt nemo laborum illum accusantium recusandae assumenda
+              deserunt earum ut dolor.
+            </p>
+          </div>
+          <div class="card hidden">
+            <img src="assets/project-img/1.png" alt="" width="100%" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              nesciunt nemo laborum illum accusantium recusandae assumenda
+              deserunt earum ut dolor.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- END CARD -->
+
+      <div class="container second">
+        <h1>About Me</h1>
+      </div>
+
+      <div class="blank"></div>
+      <div class="asik"></div>
+    </main>
 
     <!-- ==========featured article========== -->
 
     <!-- JS -->
-    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
